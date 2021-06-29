@@ -8,7 +8,7 @@ namespace helloWorld
         {
             int option;
             Console.WriteLine("Choose any one of the following: \n 1. HelloWorld \n 2. TypeConversion \n 3. Constants \n " +
-                "4. Operators \n 5. Loops");
+                "4. Operators \n 5. Loops \n 6.CallByReference");
 
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)  //example for switch and nested switch 
@@ -64,6 +64,10 @@ namespace helloWorld
                             loopType.dowhileLoop();
                             break;
                     }
+                    break;
+                case 6:
+                    callByRef c = new callByRef();
+                    c.callByReference();
                     break;
             }
         }
