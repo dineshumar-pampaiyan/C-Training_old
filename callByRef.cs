@@ -12,9 +12,9 @@ namespace helloWorld
         {
             int temp;
 
-            temp = x; /* save the value of x */
-            x = y;    /* put y into x */
-            y = temp; /* put temp into y */
+            temp = x;
+            x = y;    
+            y = temp; 
         }
 
         public void callByReference()
