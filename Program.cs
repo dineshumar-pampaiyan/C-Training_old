@@ -17,6 +17,8 @@ namespace helloWorld
             op.arithmeticOperators();
             op.relationalOperators();
             op.logicalOperators();
+            op.bitwiseOperators();
+            op.assignmentOperators();
         }
     }
 }

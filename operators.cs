@@ -115,5 +115,78 @@ namespace helloWorld
             }
             Console.ReadLine();
         }
+
+        //Bitwise Operators
+        public void bitwiseOperators()
+        {
+            int a = 60;            /* 60 = 0011 1100 */
+            int b = 13;            /* 13 = 0000 1101 */
+            int c = 0;
+
+            Console.WriteLine("******Bitwise Operators********");
+
+            c = a & b;             /* 12 = 0000 1100 */
+            Console.WriteLine("a & b - Value of c is {0}", c);
+
+            c = a | b;             /* 61 = 0011 1101 */
+            Console.WriteLine("a | b - Value of c is {0}", c);
+
+            c = a ^ b;             /* 49 = 0011 0001 */
+            Console.WriteLine("a ^ b - Value of c is {0}", c);
+
+            c = ~a;                /*-61 = 1100 0011 */
+            Console.WriteLine("~a - Value of c is {0}", c);
+
+            c = a << 2;      /* 240 = 1111 0000 */
+            Console.WriteLine("a << 2 - Value of c is {0}", c);
+
+            c = a >> 2;      /* 15 = 0000 1111 */
+            Console.WriteLine("a >> 2 - Value of c is {0}", c);
+            Console.ReadLine();
+        }
+
+        //Assignment Operators
+        public void assignmentOperators()
+        {
+            int a = 10;
+            int c;
+
+            Console.WriteLine("******Assignment Operators********");
+
+            c = a;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c += a;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c -= a;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c *= a;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c /= a;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c = 20;
+            c %= a;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c <<= 2;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c >>= 2;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c &= 2;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c ^= 2;
+            Console.WriteLine("Value of c = {0}", c);
+
+            c |= 2;
+            Console.WriteLine("Value of c = {0}", c);
+            Console.ReadLine();
+        }
     }
 }
