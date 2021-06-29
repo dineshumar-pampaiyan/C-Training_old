@@ -8,7 +8,7 @@ namespace helloWorld
 {
     public class typeConversion
     {
-        public void  typeCast()
+        public void typeCast()
         {
             double d = 6.456;
             bool b = true;

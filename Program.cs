@@ -7,9 +7,10 @@ namespace helloWorld
         static void Main(string[] args)
         {
             int option;
-            Console.WriteLine("Choose any one of the following: \n 1. HelloWorld \n 2. TypeConversion \n 3. Constants \n 4. Operators");
+            Console.WriteLine("Choose any one of the following: \n 1. HelloWorld \n 2. TypeConversion \n 3. Constants \n " +
+                "4. Operators \n 5. Loops");
 
-            option = Convert.ToInt32(Console.ReadLine()); 
+            option = Convert.ToInt32(Console.ReadLine());
             switch (option)  //example for switch and nested switch 
             {
                 case 1:
@@ -44,6 +45,23 @@ namespace helloWorld
                             break;
                         case 5:
                             op.assignmentOperators();
+                            break;
+                    }
+                    break;
+                case 5:
+                    Console.WriteLine("Choose any one of the following:\n 1. while \n 2. for \n 3. do-while");
+                    option = Convert.ToInt32(Console.ReadLine());
+                    loop loopType = new loop();
+                    switch (option)
+                    {
+                        case 1:
+                            loopType.whileLoop();
+                            break;
+                        case 2:
+                            loopType.forLoop();
+                            break;
+                        case 3:
+                            loopType.dowhileLoop();
                             break;
                     }
                     break;
