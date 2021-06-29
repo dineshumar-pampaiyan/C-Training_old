@@ -6,19 +6,48 @@ namespace helloWorld
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
-            //typeConversion type = new typeConversion();
-            //type.typeCast();
+            int option;
+            Console.WriteLine("Choose any one of the following: \n 1. HelloWorld \n 2. TypeConversion \n 3. Constants \n 4. Operators");
 
-            constants type = new constants();
-            type.constant();
-
-            operators op = new operators();
-            op.arithmeticOperators();
-            op.relationalOperators();
-            op.logicalOperators();
-            op.bitwiseOperators();
-            op.assignmentOperators();
+            option = Convert.ToInt32(Console.ReadLine()); 
+            switch (option)  //example for switch and nested switch 
+            {
+                case 1:
+                    Console.WriteLine("Hello World!");
+                    break;
+                case 2:
+                    typeConversion type = new typeConversion();
+                    type.typeCast();
+                    break;
+                case 3:
+                    constants typeConst = new constants();
+                    typeConst.constant();
+                    break;
+                case 4:
+                    Console.WriteLine("Choose any one of the following:\n 1. arithmetic \n 2. relational \n 3. logical \n " +
+                        "4. bitwise \n 5. assignment");
+                    option = Convert.ToInt32(Console.ReadLine());
+                    operators op = new operators();
+                    switch (option)
+                    {
+                        case 1:
+                            op.arithmeticOperators();
+                            break;
+                        case 2:
+                            op.relationalOperators();
+                            break;
+                        case 3:
+                            op.logicalOperators();
+                            break;
+                        case 4:
+                            op.bitwiseOperators();
+                            break;
+                        case 5:
+                            op.assignmentOperators();
+                            break;
+                    }
+                    break;
+            }
         }
     }
 }
