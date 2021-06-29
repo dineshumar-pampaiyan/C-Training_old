@@ -17,7 +17,7 @@ namespace helloWorld
                     Console.WriteLine("Hello World!");
                     break;
                 case 2:
-                    typeConversion type = new typeConversion();
+                    typeConversion type = new typeConversion(); //example for encapsuation
                     type.typeCast();
                     break;
                 case 3:
