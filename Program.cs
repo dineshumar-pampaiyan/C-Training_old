@@ -12,6 +12,13 @@ namespace helloWorld
 
             constants type = new constants();
             type.constant();
+
+            operators op = new operators();
+            op.arithmeticOperators();
+            op.relationalOperators();
+            op.logicalOperators();
+            op.bitwiseOperators();
+            op.assignmentOperators();
         }
     }
 }
