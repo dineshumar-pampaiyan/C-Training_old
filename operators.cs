@@ -56,7 +56,7 @@ namespace helloWorld
                 Console.WriteLine("a is equal to b\n");
             }
 
-            if(a < b)
+            if (a < b)
             {
                 Console.WriteLine("a is less than b\n");
             }
@@ -70,10 +70,48 @@ namespace helloWorld
             {
                 Console.WriteLine("a is Greater than or equal to b\n");
             }
-            
+
             if (a <= b)
             {
                 Console.WriteLine("a is Less than or equal to b\n");
+            }
+            Console.ReadLine();
+        }
+
+        //logical Operators
+        public void logicalOperators()
+        {
+            bool a = true;
+            bool b = true;
+
+            Console.WriteLine("******Logical Operators********");
+
+            if (a && b)
+            {
+                Console.WriteLine("a && b - Condition is true");
+            }
+
+            if (a || b)
+            {
+                Console.WriteLine("a || b - Condition is true");
+            }
+
+            /* lets change the value of  a and b */
+            a = false;
+            b = true;
+
+            if (a && b)
+            {
+                Console.WriteLine("a && b - Condition is true");
+            }
+            else
+            {
+                Console.WriteLine("a && b - Condition is not true");
+            }
+
+            if (!(a && b))
+            {
+                Console.WriteLine("(!(a && b)) - Condition is true");
             }
             Console.ReadLine();
         }

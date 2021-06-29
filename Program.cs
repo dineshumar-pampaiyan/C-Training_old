@@ -16,6 +16,7 @@ namespace helloWorld
             operators op = new operators();
             op.arithmeticOperators();
             op.relationalOperators();
+            op.logicalOperators();
         }
     }
 }
