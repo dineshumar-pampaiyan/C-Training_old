@@ -13,8 +13,8 @@ namespace helloWorld
             int temp;
 
             temp = x;
-            x = y;    
-            y = temp; 
+            x = y;
+            y = temp;
         }
 
         public void callByReference()
