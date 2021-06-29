@@ -22,6 +22,7 @@ namespace helloWorld
             callByRef c = new callByRef();
             int a = 100;
             int b = 200;
+            int? n = null; //example for nullable values
 
             Console.WriteLine("Before swap, value of a : {0}", a);
             Console.WriteLine("Before swap, value of b : {0}", b);
@@ -31,6 +32,7 @@ namespace helloWorld
 
             Console.WriteLine("After swap, value of a : {0}", a);
             Console.WriteLine("After swap, value of b : {0}", b);
+            Console.WriteLine("Null Value: {0}", n);
 
             Console.ReadLine();
         }
