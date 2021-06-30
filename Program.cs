@@ -8,7 +8,7 @@ namespace helloWorld
         {
             int option;
             Console.WriteLine("Choose any one of the following: \n 1. HelloWorld \n 2. TypeConversion \n 3. Constants \n " +
-                "4. Operators \n 5. Loops \n 6.CallByReference&null");
+                "4. Operators \n 5. Loops \n 6. CallByReference&null \n 7. Arrays");
 
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)  //example for switch and nested switch 
@@ -68,6 +68,26 @@ namespace helloWorld
                 case 6:
                     callByRef c = new callByRef();
                     c.callByReference();
+                    break;
+                case 7:
+                    arrays a = new arrays();
+                    Console.WriteLine("Choose any one of the following:\n 1. SimpleArray \n 2. MultiDimensional Arrays \n 3. Jagged Array \n 4. ArrayClass");
+                    option = Convert.ToInt32(Console.ReadLine());
+                    switch (option)
+                    {
+                        case 1:
+                            a.simpleArrayExample();
+                            break;
+                        case 2:
+                            a.multiDimensionalArra();
+                            break;
+                        case 3:
+                            a.jaggedArray();
+                            break;
+                        case 4:
+                            a.arrayClass();
+                            break;
+                    }
                     break;
             }
         }
