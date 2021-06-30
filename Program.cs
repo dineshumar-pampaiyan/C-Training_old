@@ -8,7 +8,7 @@ namespace helloWorld
         {
             int option;
             Console.WriteLine("Choose any one of the following: \n 1. HelloWorld \n 2. TypeConversion \n 3. Constants \n " +
-                "4. Operators \n 5. Loops \n 6. CallByReference&null \n 7. Arrays");
+                "4. Operators \n 5. Loops \n 6. CallByReference&null \n 7. Arrays \n 8. Strings");
 
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)  //example for switch and nested switch 
@@ -88,6 +88,10 @@ namespace helloWorld
                             a.arrayClass();
                             break;
                     }
+                    break;
+                case 8:
+                    strings s = new strings();
+                    s.stringOperations();
                     break;
             }
         }
