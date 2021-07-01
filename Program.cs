@@ -9,7 +9,7 @@ namespace helloWorld
             int option;
             Console.WriteLine("Choose any one of the following: \n 1. HelloWorld \n 2. TypeConversion \n 3. Constants \n " +
                 "4. Operators \n 5. Loops \n 6. CallByReference&null \n 7. Arrays \n 8. Strings \n 9. Structure \n " +
-                "10. Enum\n 11. Inheritance");
+                "10. Enum\n 11. Inheritance\n 12. Polymorphism");
 
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)  //example for switch and nested switch 
@@ -105,6 +105,22 @@ namespace helloWorld
                 case 11:
                     testInheritance i = new testInheritance();
                     i.inheritanceExample();
+                    break;
+                case 12:
+                    Tester t = new Tester();
+                    polymorphism p = new polymorphism();
+                    Console.WriteLine("Choose any one of the following:\n 1. Function Overloading \n 2. Operator Overloading");
+                    option = Convert.ToInt32(Console.ReadLine());
+                    switch (option)
+                    {
+                        case 1:
+                            p.functionOverloading(); //polymorphism
+                            break;
+                        case 2:
+                            t.OperatorOverloading();
+                            break;
+                    }
+
                     break;
             }
         }
