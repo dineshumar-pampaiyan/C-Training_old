@@ -107,8 +107,20 @@ namespace helloWorld
                     i.inheritanceExample();
                     break;
                 case 12:
+                    Tester t = new Tester();
                     polymorphism p = new polymorphism();
-                    p.functionOverloading(); //polymorphism
+                    Console.WriteLine("Choose any one of the following:\n 1. Function Overloading \n 2. Operator Overloading");
+                    option = Convert.ToInt32(Console.ReadLine());
+                    switch (option)
+                    {
+                        case 1:
+                            p.functionOverloading(); //polymorphism
+                            break;
+                        case 2:
+                            t.OperatorOverloading();
+                            break;
+                    }
+
                     break;
             }
         }
