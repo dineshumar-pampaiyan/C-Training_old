@@ -28,6 +28,7 @@ namespace helloWorld
 
         public void delegateExample()
         {
+            Console.WriteLine("*****Delegate*****");
             //create delegate instances
             NumberChanger nc1 = new NumberChanger(AddNum);
             NumberChanger nc2 = new NumberChanger(MultNum);

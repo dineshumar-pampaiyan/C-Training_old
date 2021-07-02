@@ -10,7 +10,8 @@ namespace helloWorld
             Console.WriteLine("Choose any one of the following: \n 1. HelloWorld \n 2. TypeConversion \n 3. Constants \n " +
                 "4. Operators \n 5. Loops \n 6. CallByReference&null \n 7. Arrays \n 8. Strings \n 9. Structure \n " +
                 "10. Enum\n 11. Inheritance\n 12. Polymorphism\n 13. Interface\n" +
-                " 14. PreProcessor\n 15. ErrorHandling\n 16. FileIO\n 17. Properties \n 18. Indexers\n 19. Delegates");
+                " 14. PreProcessor\n 15. ErrorHandling\n 16. FileIO\n 17. Properties \n " +
+                "18. Indexers\n 19. Delegates \n 20. Events\n 21. Generics");
 
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)  //example for switch and nested switch 
@@ -151,6 +152,14 @@ namespace helloWorld
                 case 19:
                     delegates d = new delegates();
                     d.delegateExample();
+                    break;
+                case 20:
+                    events eve = new events();
+                    eve.eventExamples();
+                    break;
+                case 21:
+                    generics gen = new generics();
+                    gen.genericExamples();
                     break;
             }
         }

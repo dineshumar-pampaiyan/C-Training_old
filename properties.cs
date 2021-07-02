@@ -60,6 +60,7 @@ namespace helloWorld
     {
         public void propertiesExample()
         {
+            Console.WriteLine("*****Properties*****");
             // Create a new Student object:
             Student s = new Student();
 
