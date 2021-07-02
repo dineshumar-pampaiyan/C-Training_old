@@ -11,7 +11,7 @@ namespace helloWorld
                 "4. Operators \n 5. Loops \n 6. CallByReference&null \n 7. Arrays \n 8. Strings \n 9. Structure \n " +
                 "10. Enum\n 11. Inheritance\n 12. Polymorphism\n 13. Interface\n" +
                 " 14. PreProcessor\n 15. ErrorHandling\n 16. FileIO\n 17. Properties \n " +
-                "18. Indexers\n 19. Delegates \n 20. Events\n 21. Generics");
+                "18. Indexers\n 19. Delegates \n 20. Events\n 21. Generics\n 22. Unsafe\n 23. MultiThread");
 
             option = Convert.ToInt32(Console.ReadLine());
             switch (option)  //example for switch and nested switch 
@@ -160,6 +160,14 @@ namespace helloWorld
                 case 21:
                     generics gen = new generics();
                     gen.genericExamples();
+                    break;
+                case 22:
+                    unsafeCodes uc = new unsafeCodes();
+                    uc.unsafeExample();
+                    break;
+                case 23:
+                    multiThreading mt = new multiThreading();
+                    mt.multiThreadingExamples();
                     break;
             }
         }
